@@ -1,0 +1,7 @@
+{
+  "name": "cs-modal-can_dismiss",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
