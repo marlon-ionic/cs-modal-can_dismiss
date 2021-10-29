@@ -1,0 +1,29 @@
+<ion-button *ngIf="!isLoading" class="close" fill="transparent" (click)="cancel()">
+  <ion-icon slot="icon-only" name="close"></ion-icon>
+</ion-button>
+<section class="modal-content">
+  <h2>{{modalHeader}}</h2>
+  <h4>Debit Card</h4>
+  <p class="cc">Visa - **** **** **** 9181</p>
+  <p class="msg">Are you sure you want to remove this debit card?</p>
+
+  <div class="actions">
+    <div class="action">
+      <span *ngIf="errorMessage" class="error label">{{errorMessage}}</span>
+      <ion-button expand="block" [disabled]="isLoading" (click)="removeCard()">
+        <ng-container *ngIf="isLoading">
+          <ion-spinner></ion-spinner>
+        </ng-container>
+        <ng-container *ngIf="!isLoading">
+          Remove Card
+        </ng-container>
+        </ion-button>
+    </div>
+    <div *ngIf="!isLoading" class="action" >
+      <ion-button expand="block" fill="outline" (click)="cancel()">Cancel</ion-button>
+    </div>
+  </div>
+
+</section>
+
+<div class="mouse-area"></div>

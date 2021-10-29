@@ -1,27 +1,33 @@
-#container {
+ion-content {
+  --background: #fefcf6;
+}
+
+ion-button.no-border {
+  --border-width: 0;
+}
+
+ion-icon.del {
+  font-size: 1.8em;
+}
+
+h2, p.note {
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.group {
+  cursor: pointer;
+  background-color: #fefffe;
+  border: #c8e8fe 1px solid;
+  margin: 1em 0;
+  padding: 1em;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.group.disabled {
+  cursor: auto;
+  background-color: #f3f5f6;
+  border-color: #e6e8e6;
 }
 
-#container a {
-  text-decoration: none;
+ion-col.container {
+  display: flex;
 }

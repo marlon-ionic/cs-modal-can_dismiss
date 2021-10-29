@@ -1,0 +1,30 @@
+ion-spinner {
+  width: 1em;
+  height: 1em;
+}
+.error.label  {
+  color: #cc0000;
+  font-size: .75em;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.modal-content {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+
+  .actions {
+    display: flex;
+    flex: 1 0 auto;
+    flex-flow: column;
+    min-width: 256px;
+    .action {
+      flex: 1 0 auto;
+    }
+  }
+}
